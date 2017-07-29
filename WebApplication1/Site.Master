@@ -73,12 +73,18 @@
                 </div>
             </div>
         </div>
+        <div id="TitleContent" style="text-align:center">
+            <a runat="server" href="~/">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/logo.png" BorderStyle="None" />
+            </a>
+            <br />
+        </div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Wingtip Toys</p>
             </footer>
         </div>
     </form>
